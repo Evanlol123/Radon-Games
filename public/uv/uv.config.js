@@ -1,3 +1,8 @@
+const apexHost = location.host.startsWith("www.")
+  ? location.host.slice(4)
+  : location.host;
+
+
 self.__uv$config = {
 	prefix: '/uv/service/',
 	bare: `https://bare.hiscouch.com/`,
